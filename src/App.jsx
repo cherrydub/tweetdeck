@@ -1,5 +1,5 @@
 import "./App.css";
-import { TwitterTimelineEmbed } from "react-twitter-embed";
+import { TwitterTimelineEmbed, TwitterTweetEmbed } from "react-twitter-embed";
 
 function App() {
   return (
@@ -16,6 +16,10 @@ function App() {
           sourceType="profile"
           screenName="Pentosh1"
           options={{ width: 500, height: 750 }}
+        />
+        <TwitterTweetEmbed
+          tweetId="1739638245632221503"
+          options={{ conversation: "none" }} // You can customize options here
         />
       </div>
     </>
